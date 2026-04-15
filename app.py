@@ -91,3 +91,24 @@ elif page == "📊 General Analysis":
         ax3.set_xlabel("Used")
         ax3.set_ylabel("Count")
         st.pyplot(fig3, use_container_width=False)
+
+elif page == "➕ Add New Device":
+    st.title("➕ Add New Device")
+
+    # ---- INPUT FIELDS ----
+    serial = st.text_input("Serial Number",placeholder="e.g. WYUBTIGMN")
+    brand = st.selectbox("Brand",["LENOVO", "MACBOOK PRO","MACBOOK AIR"] )
+    used = st.selectbox("Used?", ["NO", "YES"])
+    status = st.selectbox("Status", ["Available", "Not Available"])
+    warranty = st.selectbox("Under Warranty?", ["YES", "NO"])
+    ram = st.text_input("Please enter RAM of the device",placeholder="e.g. 32GB")  
+    ssd = st.text_input("Please enter SSD of the device", placeholder="e.g. 16GB")                       
+    
+
+    # ---- SAVE BUTTON ----
+    add_clicked = st.button("💾 Save Device")
+    if add_clicked:
+
+        # Check all fields are filled
+        if serial == "":
+            st.warning("⚠️ Please fill all fields!")
