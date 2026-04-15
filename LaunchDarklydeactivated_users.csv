@@ -1,8 +1,0 @@
-id,email,first_name,last_name,role,custom_roles,teams,mfa,pending_invite,last_seen,last_seen_metadata
-6363cbba114bcf0d2f44ac77,paul.mitchell-gears@certn.co,Paul,Mitchell-Gears,writer,,,enabled,False,"2026-02-27, 08:33 -08:00",
-6602f80bbdd2e8101211cd3f,matt.george@certn.co,Matt,George,writer,,,enabled,False,"2026-03-13, 07:19 -07:00",
-66043c0acf30870f470bf4da,kingsley.norman@certn.co,Kingsley,Norman,writer,,,disabled,False,"2026-02-01, 01:10 -08:00",
-66143406ae82b60eb7cb1d88,adrian.czech@certn.co,Adrian,Czech,admin,,,enabled,False,"2026-03-26, 04:54 -07:00",
-66ed8eed57a2450ff9df6ec4,elyas.faiq@certn.co,Elyas,Faiq,writer,,,enabled,False,"2025-12-17, 10:55 -08:00",
-68224b04b876a008c3dead5c,sarah.button@certn.co,Sarah,Button,writer,,,enabled,False,"2026-03-20, 08:42 -07:00",
-69bc48d9ae64c90a36b0e15e,devops@certn.co,Certn,DevOps,reader,,,enabled,False,"2026-03-20, 02:20 -07:00",
