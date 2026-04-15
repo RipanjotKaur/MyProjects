@@ -124,7 +124,7 @@ elif page == "➕ Add New Device":
                 "UnderWarranty": warranty,
                 "RAM" : ram,
                 "SSD" : ssd,
-                "Assigned To": assigned_to
+                
         }
 
         # Add to dataframe
