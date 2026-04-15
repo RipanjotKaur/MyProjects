@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
+import os
 st.set_page_config(layout='wide', page_title='Certn Devices')
 
 # Load data
-df = pd.read_csv("DevicesHealth.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "DevicesHealth.csv"))
 
 df.index = df.index + 1
 page = st.sidebar.selectbox("Navigate", ["🔍 Filter Devices", "📊 General Analysis", "➕ Add New Device"])
@@ -103,7 +104,7 @@ elif page == "➕ Add New Device":
         }
 
         new_df = pd.DataFrame([new_row])
-        new_df.to_csv("DevicesHealth.csv", mode="a", header=False, index=False)
+        new_df.to_csv(os.path.join(os.path.dirname(__file__), "DevicesHealth.csv"), mode="a", header=False, index=False)
         st.success("The device is added successfully! Hurray!")
 # import streamlit as st
 # import pandas as pd
