@@ -1,0 +1,20 @@
+# Ignore everything
+*
+
+# Allow these files
+!.gitignore
+# ignore everything
+*
+
+# allow gitignore
+!.gitignore
+
+# allow Devices folder
+!Devices/
+
+# ignore everything inside Devices
+Devices/*
+
+# allow only specific files inside Devices
+!Devices/app.py
+!Devices/DevicesHealth.csv
