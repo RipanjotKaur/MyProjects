@@ -131,4 +131,4 @@ elif page == "➕ Add New Device":
         # ✅ Append to CSV
         new_df.to_csv("DevicesHealth.csv", mode="a", header=False, index=False)
 
-        st.success("The device is added successfully!")
+        st.success("The device is added successfully! Congratulations")
