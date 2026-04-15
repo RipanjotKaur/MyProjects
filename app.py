@@ -112,3 +112,23 @@ elif page == "➕ Add New Device":
         # Check all fields are filled
         if serial == "":
             st.warning("⚠️ Please fill all fields!")
+
+        # Create new row
+        new_row = {
+                "Serial Number": serial,
+                "Brand": brand,
+                "Used": used,
+                "Status": status,
+                "UnderWarranty": warranty,
+                "RAM" : ram,
+                "SSD" : ssd,
+                "Assigned To": assigned_to
+        }
+
+        # Add to dataframe
+        new_df = pd.DataFrame([new_row])
+
+        # ✅ Append to CSV
+        new_df.to_csv("DevicesHealth.csv", mode="a", header=False, index=False)
+
+        st.success("The device is added successfully!")
