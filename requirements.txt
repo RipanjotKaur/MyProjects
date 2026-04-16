@@ -13,3 +13,12 @@ supabase
 # App runs → connects to Supabase using secret keys
 #         ↓
 # User adds device → saved to Supabase permanently ✅
+
+
+
+# Simple Analogy:
+# Think of it like a restaurant:
+
+# GitHub = recipe book (code)
+# Supabase = fridge storing ingredients (data)
+# Streamlit = kitchen that uses both to serve customers
