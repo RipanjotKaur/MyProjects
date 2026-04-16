@@ -8,12 +8,7 @@ st.set_page_config(layout='wide', page_title='Certn Devices')
 SUPABASE_URL = st.secrets["SUPABASE_URL"]
 SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-try:
-    supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
-    st.success("✅ Supabase connected!")
-except Exception as e:
-    st.error(f"❌ Connection failed: {e}")
-    st.stop()
+
 # ---- LOAD DATA FROM SUPABASE ----
 @st.cache_data(ttl=10)
 def load_data():
