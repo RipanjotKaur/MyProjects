@@ -1,3 +1,15 @@
 streamlit
 pandas
 supabase
+#Think of Streamlit Cloud as a brand new empty computer every time it starts. It has nothing installed!
+#requirements.txt is like a shopping list that tells Streamlit:
+
+# You write code in VS Code
+#         ↓
+# git push sends it to GitHub
+#         ↓
+# Streamlit detects new code → rebuilds app
+#         ↓
+# App runs → connects to Supabase using secret keys
+#         ↓
+# User adds device → saved to Supabase permanently ✅
