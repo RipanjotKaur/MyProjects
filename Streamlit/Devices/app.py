@@ -74,17 +74,19 @@ if page == "🔍 Filter Devices":
 elif page == "📊 General Analysis":
     st.title("Analysis of Certn Devices")
     st.sidebar.title("📊 General Analysis")
+    col1, col2 = st.columns(2)
 
-    st.subheader("📦 Devices by Brand")
-    brand_count = df["Brand"].value_counts().reset_index()
-    brand_count.columns = ["Brand", "Count"]
-    st.bar_chart(brand_count.set_index("Brand"))
+    with col1:
+        st.subheader("📦 Devices by Brand")
+        brand_count = df["Brand"].value_counts().reset_index()
+        brand_count.columns = ["Brand", "Count"]
+        st.bar_chart(brand_count.set_index("Brand"))
 
-    
-    st.subheader("Used Devices")
-    used_count = df["Used"].value_counts().reset_index()
-    used_count.columns = ["Used", "Count"]
-    st.bar_chart(used_count.set_index("Used"))
+    with col2:
+        st.subheader("Used Devices")
+        used_count = df["Used"].value_counts().reset_index()
+        used_count.columns = ["Used", "Count"]
+        st.bar_chart(used_count.set_index("Used"))
 
 # ---- ADD NEW DEVICE ----
 elif page == "➕ Add New Device":
