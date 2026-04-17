@@ -1,20 +1,14 @@
-# Ignore everything
-*
+# System files
+.DS_Store
+**/.DS_Store
 
-# Allow these files
-!.gitignore
-# ignore everything
-*
+# VS Code / Dev Container
+.devcontainer/
 
-# allow gitignore
-!.gitignore
+# Python
+__pycache__/
+*.pyc
+venv/
 
-# allow Devices folder
-!Devices/
-
-# ignore everything inside Devices
-Devices/*
-
-# allow only specific files inside Devices
-!Devices/app.py
-!Devices/DevicesHealth.csv
+# Secrets
+.env
