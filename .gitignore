@@ -3,7 +3,14 @@
 
 # Except these
 !.gitignore
-!Streamlit/
-!Streamlit/**
 !FlaskAPIDevelopment/
 !FlaskAPIDevelopment/**
+!Flask/
+!Flask/**
+
+# Re-ignore junk inside allowed folders
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/.env
+**/.DS_Store
